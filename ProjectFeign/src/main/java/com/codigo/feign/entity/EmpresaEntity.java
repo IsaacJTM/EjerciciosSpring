@@ -13,17 +13,15 @@ import java.sql.Timestamp;
 public class EmpresaEntity {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column (name = "id_persona")
+    @Column (name = "id_empresa")
     private Long idEmpresa;
     @Column (name = "num_docu", nullable = false, length = 15)
     private Long numDoc;
-    @Column (name = "nombre", nullable = false, length = 150)
-    private Long nombre;
-    @Column (name = "ape_pat", nullable = false, length = 150)
-    private Long apellidoPat;
+    @Column (name = "razon_social", nullable = false, length = 150)
+    private Long razonSocial;
+    @Column (name = "nom_comercial", nullable = false, length = 150)
+    private Long nombreComercial;
     @Column (name = "ape_mat", nullable = false, length = 150)
-    private Long apellidoMat;
-    @Column(name = "estado", nullable = false)
     private Integer estado;
     @Column(name = "usua_crea", length = 45)
     private String usuaCrea;
